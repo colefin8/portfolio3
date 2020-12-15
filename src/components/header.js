@@ -5,19 +5,16 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
+      position: "fixed",
+      backgroundColor: "white",
+      top: '0',
+      width: "100%",
+      height: "10vh",
       marginBottom: `1.45rem`,
     }}
   >
     <h1 style={{ margin: 0 }}>
-      <Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
-      >
-        {siteTitle}
-      </Link>
+  {'Cole Finlayson'}
     </h1>
   </header>
 )

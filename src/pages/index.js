@@ -2,22 +2,14 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Skills from "../components/Skills"
+import Header from "../components/header"
 
 const IndexPage = () => (
   <Layout>
+    <Header />
     <SEO title="Home" />
     <section className="content" id="bigger">
-      <div
-        style={{
-          display: "flex",
-          borderRadius: "4px",
-          maxWidth: "60%",
-          height: "90%",
-          backgroundImage: "url('/assets/garage_door.JPG')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div id="garage-door-img">
         <div className="hover-text">
           {
             "I'm a full stack web developer from Provo, UT with a background in "
@@ -31,7 +23,7 @@ const IndexPage = () => (
           <br />
           <br />
           {
-            "Changing careers to web development lets me to apply the skills I learned in that field"
+            "Changing careers to web development lets me apply the skills I learned in that field"
           }
           <br />
           <br />
