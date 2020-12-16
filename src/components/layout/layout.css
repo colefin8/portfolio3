@@ -1,7 +1,6 @@
 html {
   font-family: sans-serif;
 }
-
 /** My stuff */
 
 .content {
@@ -53,6 +52,10 @@ html {
   width: 10vw;
 }
 
+.header-grid-item {
+  margin: auto;
+}
+
 #garage-door-img {
   display: flex;
   border-radius: 4px;
@@ -61,6 +64,17 @@ html {
   background-image: url("/assets/garage_door.JPG");
   background-size: cover;
   background-position: center;
+}
+
+#contact-header {
+  position: sticky;
+  top: 0;
+  background-color: #89898925;
+  color: #ffffff;
+  width: 100%;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 3fr 2fr repeat(3, 1fr);
 }
 
 #gatsby-focus-wrapper,

@@ -1,12 +1,11 @@
 import React from "react"
 import Layout from "../components/layout/layout"
+import Projects from "../components/Projects"
 import SEO from "../components/seo"
 import Skills from "../components/Skills"
-import Header from "../components/header"
 
 const IndexPage = () => (
   <Layout>
-    <Header />
     <SEO title="Home" />
     <section className="content" id="bigger">
       <div id="garage-door-img">
@@ -38,7 +37,13 @@ const IndexPage = () => (
       <Skills />
     </section>{" "}
     <section className="content">
-      <h1> Main Page</h1>
+      <Projects name="Listo" imageUrl="Listo" />
+    </section>
+    <section className="content">
+      <Projects name="Love to Know" imageUrl="Lovetoknow" />
+    </section>
+    <section className="content">
+      <Projects name="Card Smart" imageUrl="CardSmart" />
     </section>
   </Layout>
 )

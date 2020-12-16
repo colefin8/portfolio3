@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
+import Header from "../../components/header"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,10 +31,11 @@ const Layout = ({ children }) => {
         <div
           style={{
             boxSizing: `border-box`,
-            overflowY: `scroll`,
+            overflowY: "scroll",
             height: `100vh`,
           }}
         >
+          <Header />
           <main>{children}</main>
           <footer>
             © {new Date().getFullYear()}, Built with
